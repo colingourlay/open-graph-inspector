@@ -1,0 +1,23 @@
+{
+  "name": "Open Graph Inspector",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Opens up a popup after submitting the current URL to Facebook's open graph object debugger",
+  "icons": {
+    "16": "icons/icon16.png",
+    "24": "icons/icon24.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png",
+    "256": "icons/icon256.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "Open Graph Inspector",
+    "default_popup": "src/browser_action/browser_action.html"
+  },
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "https://*.facebook.com/"
+  ]
+}
